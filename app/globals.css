@@ -102,3 +102,18 @@ main{overflow:visible}
 @media(max-width:560px){.disclaimer{margin:44px 0;padding:34px 28px;border-radius:42px 58px 46px 54px / 38px 50px 40px 48px;font-size:22px;line-height:1.38}}
 
 .hero:before{display:none}
+
+@media(min-width:901px){
+  .diagram-callouts li{--reach:57%;--angle:0deg}
+  .diagram-callouts li:before{display:none}
+  .diagram-callouts li:after{top:50%;width:var(--reach);height:11px;border:0;transform:rotate(var(--angle))}
+  .callout-1:after,.callout-3:after,.callout-5:after,.callout-7:after{right:calc(var(--reach) * -1);transform-origin:left center;background:radial-gradient(circle at calc(100% - 5px) 50%,var(--coral) 0 5px,transparent 5.5px),linear-gradient(to bottom,transparent 5px,var(--blue) 5px 6px,transparent 6px)}
+  .callout-2:after,.callout-4:after,.callout-6:after{left:calc(var(--reach) * -1);transform-origin:right center;background:radial-gradient(circle at 5px 50%,var(--coral) 0 5px,transparent 5.5px),linear-gradient(to bottom,transparent 5px,var(--blue) 5px 6px,transparent 6px)}
+  .callout-1{top:18%;--angle:10deg}
+  .callout-2{top:27%;--angle:-12deg}
+  .callout-3{top:36%;--angle:3deg}
+  .callout-4{top:47%;--angle:-2deg}
+  .callout-5{top:59%;--angle:2deg}
+  .callout-6{top:81%;--angle:-15deg}
+  .callout-7{top:76%;--reach:78%;--angle:-45deg}
+}
