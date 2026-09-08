@@ -125,7 +125,6 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">Курс «Здоровая осанка»</p>
           <h1>Курс “Здоровая осанка” – 6 недель, после которых у вас вырастут крылья</h1>
           <Cta />
         </div>
