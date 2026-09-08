@@ -100,3 +100,5 @@ main{overflow:visible}
 .disclaimer:before{left:8%;bottom:-34px;width:230px;height:110px;background:rgba(255,190,202,.55);transform:rotate(-9deg)}
 .disclaimer:after{right:9%;top:-42px;width:280px;height:130px;background:rgba(170,205,207,.48);transform:rotate(8deg)}
 @media(max-width:560px){.disclaimer{margin:44px 0;padding:34px 28px;border-radius:42px 58px 46px 54px / 38px 50px 40px 48px;font-size:22px;line-height:1.38}}
+
+.hero:before{display:none}
