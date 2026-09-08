@@ -168,10 +168,6 @@ export default function Home() {
           <ul className="diagram-callouts">{consequences.map((item, index) => <li className={`callout-${index + 1}`} key={item}><span>{item}</span></li>)}</ul>
         </div>
         <div className="note"><p>Не каждая боль вызвана осанкой. Но если проблема связана с тем, как тело двигается и распределяет нагрузку, работать только с местом боли часто недостаточно.</p><strong>Короткий вывод: чтобы изменить осанку, нужно работать со всем телом — от стоп до положения головы.</strong></div>
-        <figure className="movement-strip">
-          <img src="/movement-side-stretch.png" alt="Человек выполняет мягкое боковое вытяжение" width="1536" height="1024" loading="lazy" />
-          <div className="movement-line" aria-hidden="true"><span/><span/><span/></div>
-        </figure>
       </section>
 
       <section className="course" id="course">
