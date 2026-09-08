@@ -186,7 +186,7 @@ export default function Home() {
 
       <section className="process">
         <div className="section-heading wide"><h2>Как мы будем работать с вашими проблемами и делать вас здоровее и стройнее?</h2></div>
-        <div className="process-list">{processSteps.map(([title, text, image, alt], index) => <article key={title}><figure className="process-media"><img src={image} alt={alt} width="1536" height="1024" loading="lazy" /></figure><div className="process-card-copy"><span>{String(index + 1).padStart(2, "0")}</span><h3>{title}</h3><p>{text}</p></div></article>)}</div>
+        <div className="process-list">{processSteps.map(([title, text, image, alt]) => <article key={title}><figure className="process-media"><img src={image} alt={alt} width="1536" height="1024" loading="lazy" /></figure><div className="process-card-copy"><h3>{title}</h3><p>{text}</p></div></article>)}</div>
       </section>
 
       <section className="results" id="results">
