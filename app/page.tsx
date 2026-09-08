@@ -97,6 +97,12 @@ function CheckList({ items }: { items: string[] }) {
   return <ul className="check-list">{items.map((item) => <li key={item}>{item}</li>)}</ul>;
 }
 
+const fitIconTypes = ["back", "movement", "joint", "feet", "posture", "stoop"];
+
+function FitIcon({ index }: { index: number }) {
+  return <span className={`fit-icon fit-icon--${fitIconTypes[index]}`} aria-hidden="true"><i/><b/></span>;
+}
+
 function Cta({ secondary = false }: { secondary?: boolean }) {
   return (
     <div className={secondary ? "cta-wrap cta-wrap--center" : "cta-wrap"}>
@@ -135,7 +141,7 @@ export default function Home() {
           <figure className="fit-visual">
             <img src="/back-pain-highlight.png" alt="Человек держится рукой за поясницу, зона боли подсвечена красным" width="1122" height="1402" loading="lazy" />
           </figure>
-          <div className="fit-grid">{fitItems.map((item, index) => <article key={item}><span>0{index + 1}</span><p>{item}</p></article>)}</div>
+          <div className="fit-grid">{fitItems.map((item, index) => <article key={item}><FitIcon index={index}/><p>{item}</p></article>)}</div>
         </div>
         <Cta />
       </section>

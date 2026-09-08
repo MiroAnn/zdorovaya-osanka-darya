@@ -38,3 +38,14 @@ main{overflow:visible}
   .portrait-caption{grid-column:1;grid-row:2;max-width:760px;margin:0;padding:22px 0 0;border-left:0;border-top:2px solid var(--coral);font-size:28px;line-height:1.28;letter-spacing:-.025em}
 }
 @media(max-width:900px){.portrait-caption{font-size:24px;line-height:1.3}}
+
+.fit-icon{position:relative;display:block;width:42px;height:42px;color:var(--blue)}
+.fit-icon i,.fit-icon b{position:absolute;display:block;font-style:normal}
+.fit-icon--back i{left:18px;top:3px;width:9px;height:35px;border-left:2px solid currentColor;border-radius:50%;transform:rotate(7deg)}
+.fit-icon--back i:before,.fit-icon--back i:after{content:"";position:absolute;left:-4px;width:7px;height:7px;border:1px solid currentColor;border-radius:50%;background:var(--chalk)}
+.fit-icon--back i:before{top:5px}.fit-icon--back i:after{bottom:5px}
+.fit-icon--movement:before,.fit-icon--movement:after{position:absolute;top:10px;font-size:24px;line-height:1;color:currentColor}.fit-icon--movement:before{content:"←";left:0}.fit-icon--movement:after{content:"→";right:0}.fit-icon--movement i{left:19px;top:5px;width:2px;height:32px;background:currentColor}
+.fit-icon--joint i,.fit-icon--joint b{width:17px;height:17px;border:2px solid currentColor;border-radius:50%}.fit-icon--joint i{left:4px;top:5px}.fit-icon--joint b{right:4px;bottom:5px}.fit-icon--joint:after{content:"";position:absolute;left:15px;top:20px;width:16px;border-top:2px solid currentColor;transform:rotate(45deg)}
+.fit-icon--feet i,.fit-icon--feet b{width:13px;height:29px;border:2px solid currentColor;border-radius:60% 40% 55% 45%;transform:rotate(18deg)}.fit-icon--feet i{left:7px;top:2px}.fit-icon--feet b{right:7px;bottom:1px;transform:rotate(-15deg)}
+.fit-icon--posture i{left:19px;top:3px;width:2px;height:36px;background:currentColor}.fit-icon--posture:before,.fit-icon--posture:after{content:"";position:absolute;top:6px;width:17px;height:27px;border:2px solid currentColor}.fit-icon--posture:before{left:3px;border-right:0;border-radius:100% 0 0 100%}.fit-icon--posture:after{right:3px;border-left:0;border-radius:0 100% 100% 0}
+.fit-icon--stoop i{left:3px;top:7px;width:30px;height:28px;border-top:2px solid currentColor;border-left:2px solid currentColor;border-radius:100% 0 0 0;transform:rotate(12deg)}.fit-icon--stoop b{right:2px;top:2px;width:10px;height:10px;border:2px solid currentColor;border-radius:50%}
