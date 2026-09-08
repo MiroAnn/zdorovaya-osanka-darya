@@ -28,3 +28,7 @@
 .hero{min-height:auto;padding-top:42px;padding-bottom:80px;align-items:start}
 @media(max-width:900px){.hero{padding-top:38px}}
 @media(max-width:560px){.hero{padding-top:30px;padding-bottom:60px}}
+
+body{overflow-x:hidden}
+main{overflow:visible}
+.site-header{position:sticky;top:0;z-index:100}
