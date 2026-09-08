@@ -163,7 +163,10 @@ export default function Home() {
             <p>Если в этой системе нарушается подвижность, сила или координация, тело начинает перераспределять нагрузку. Одни мышцы постоянно перенапрягаются, другие включаются недостаточно. Компенсация может проявляться в разных местах.</p>
             <p>Последствиями перенапряжения и плохой осанки могут быть:</p>
           </div>
-          <CheckList items={consequences}/>
+        </div>
+        <div className="body-diagram">
+          <img className="body-diagram-person" src="/posture-problem-map.png" alt="Схема проблемных зон тела, связанных с осанкой" width="1122" height="1402" loading="lazy" />
+          <ul className="diagram-callouts">{consequences.map((item, index) => <li className={`callout-${index + 1}`} key={item}><span>{item}</span></li>)}</ul>
         </div>
         <div className="note"><p>Не каждая боль вызвана осанкой. Но если проблема связана с тем, как тело двигается и распределяет нагрузку, работать только с местом боли часто недостаточно.</p><strong>Короткий вывод: чтобы изменить осанку, нужно работать со всем телом — от стоп до положения головы.</strong></div>
         <figure className="movement-strip">
