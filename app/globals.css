@@ -120,3 +120,32 @@ main{overflow:visible}
   .callout-6{top:81%;--angle:-15deg}
   .callout-7{top:76%;--reach:78%;--angle:-45deg}
 }
+
+/* Anatomical pictograms for the five course zones. */
+.zones article{grid-template-columns:104px minmax(0,1fr);gap:30px;align-items:center;padding:34px 0}
+.zone-icon{position:relative;display:block;width:76px;height:76px;border:1px solid rgba(79,113,130,.36);border-radius:22px;background:linear-gradient(145deg,rgba(207,225,215,.68),rgba(247,247,242,.2));color:var(--blue)}
+.zone-icon i,.zone-icon b,.zone-icon em{position:absolute;display:block;font-style:normal;font-weight:400}
+.zone-icon--feet i,.zone-icon--feet b{width:15px;height:35px;border:2px solid currentColor;border-radius:62% 38% 55% 45%}
+.zone-icon--feet i{left:20px;top:16px;transform:rotate(15deg)}
+.zone-icon--feet b{right:20px;bottom:14px;transform:rotate(-15deg)}
+.zone-icon--feet i:before,.zone-icon--feet b:before{content:"";position:absolute;top:-7px;width:5px;height:5px;border:1.5px solid currentColor;border-radius:50%}
+.zone-icon--feet i:before{left:1px;box-shadow:6px -2px 0 -1px var(--chalk)}
+.zone-icon--feet b:before{right:1px;box-shadow:-6px -2px 0 -1px var(--chalk)}
+.zone-icon--pelvis i{left:16px;top:27px;width:44px;height:25px;border:2px solid currentColor;border-top:0;border-radius:0 0 55% 55%}
+.zone-icon--pelvis i:before,.zone-icon--pelvis i:after{content:"";position:absolute;top:-7px;width:16px;height:18px;border:2px solid currentColor;border-bottom:0}
+.zone-icon--pelvis i:before{left:-2px;border-radius:80% 0 0 0;transform:rotate(-17deg)}
+.zone-icon--pelvis i:after{right:-2px;border-radius:0 80% 0 0;transform:rotate(17deg)}
+.zone-icon--pelvis b{left:36px;top:13px;height:22px;border-left:2px solid currentColor}
+.zone-icon--pelvis em{left:32px;bottom:13px;width:12px;height:12px;border:2px solid currentColor;border-radius:50%}
+.zone-icon--shoulders i{left:13px;top:31px;width:50px;height:25px;border-top:2px solid currentColor;border-radius:50%}
+.zone-icon--shoulders i:before,.zone-icon--shoulders i:after{content:"";position:absolute;top:-3px;width:9px;height:9px;border:2px solid currentColor;border-radius:50%;background:var(--chalk)}
+.zone-icon--shoulders i:before{left:0}.zone-icon--shoulders i:after{right:0}
+.zone-icon--shoulders b{left:37px;top:22px;height:35px;border-left:2px solid currentColor}
+.zone-icon--shoulders em{left:31px;top:17px;width:13px;height:10px;border:2px solid currentColor;border-radius:50% 50% 35% 35%}
+.zone-icon--neck i{left:28px;top:11px;width:20px;height:20px;border:2px solid currentColor;border-radius:50%}
+.zone-icon--neck b{left:30px;top:31px;width:16px;height:17px;border-left:2px solid currentColor;border-right:2px solid currentColor}
+.zone-icon--neck em{left:13px;top:44px;width:50px;height:21px;border-top:2px solid currentColor;border-radius:50%}
+.zone-icon--spine i{left:35px;top:12px;width:10px;height:50px;border-left:2px solid currentColor;border-radius:50%;transform:rotate(4deg)}
+.zone-icon--spine b{left:32px;top:17px;width:7px;height:7px;border:1.5px solid currentColor;border-radius:50%;background:var(--chalk);box-shadow:1px 10px 0 -1px var(--chalk),1px 10px 0 0 currentColor,-1px 20px 0 -1px var(--chalk),-1px 20px 0 0 currentColor,1px 30px 0 -1px var(--chalk),1px 30px 0 0 currentColor,0 40px 0 -1px var(--chalk),0 40px 0 0 currentColor}
+.zone-icon--spine em{left:19px;top:17px;width:38px;height:40px;border-left:1px solid rgba(79,113,130,.35);border-right:1px solid rgba(79,113,130,.35);border-radius:48%}
+@media(max-width:560px){.zones article{grid-template-columns:72px minmax(0,1fr);gap:14px;padding:28px 0}.zone-icon{transform:scale(.8);transform-origin:left center}.zones h3{font-size:24px}.zones p{font-size:16px}}

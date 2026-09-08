@@ -103,6 +103,12 @@ function FitIcon({ index }: { index: number }) {
   return <span className={`fit-icon fit-icon--${fitIconTypes[index]}`} aria-hidden="true"><i/><b/></span>;
 }
 
+const zoneIconTypes = ["feet", "pelvis", "shoulders", "neck", "spine"];
+
+function ZoneIcon({ index }: { index: number }) {
+  return <span className={`zone-icon zone-icon--${zoneIconTypes[index]}`} aria-hidden="true"><i/><b/><em/></span>;
+}
+
 function Cta({ secondary = false }: { secondary?: boolean }) {
   return (
     <div className={secondary ? "cta-wrap cta-wrap--center" : "cta-wrap"}>
@@ -174,7 +180,7 @@ export default function Home() {
         <div className="section-heading"><h2>Что будет на курсе?</h2></div>
         <div className="facts"><article><strong>Персонализированная</strong><p>программа ровно для ваших задач</p></article><article><strong>Умная</strong><p>диагностика в начале и конце</p></article><article><strong>15-20</strong><p>минут упражнений в день</p></article><article><strong>Нужны</strong><p>коврик и валик (дадим ссылки на озон)</p></article></div>
         <p className="lead">Программа курса охватывает всё тело и постепенно соединяет отдельные зоны в согласованное движение.</p>
-        <div className="zones">{bodyZones.map(([title, text], index) => <article key={title}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
+        <div className="zones">{bodyZones.map(([title, text], index) => <article key={title}><ZoneIcon index={index}/><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
         <div className="course-outro"><strong>Мы не пытаемся исправить каждую зону отдельно. Мы учим тело снова работать как единую систему.</strong><p className="course-warning">Курс не рассчитан на самостоятельную работу при остром состоянии, свежей травме, резком ухудшении самочувствия или симптомах, которые требуют очной медицинской оценки.</p></div>
         <Cta />
       </section>
