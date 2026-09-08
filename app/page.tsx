@@ -178,11 +178,7 @@ export default function Home() {
       <section className="course" id="course">
         <div className="section-heading"><h2>Что будет на курсе?</h2></div>
         <div className="facts"><article><strong>01</strong><p>Персонализированная программа ровно для ваших задач</p></article><article><strong>02</strong><p>Умная диагностика в начале и конце</p></article><article><strong>03</strong><p>15-20 минут упражнений в день</p></article><article><strong>04</strong><p>Нужны коврик и валик (дадим ссылки на озон)</p></article></div>
-        <div className="course-lead-visual">
-          <p className="lead">Программа курса охватывает всё тело и постепенно соединяет отдельные зоны в согласованное движение.</p>
-          <figure className="feet-visual"><img src="/feet-balance.png" alt="Стопы в движении на гимнастическом коврике" width="1122" height="1402" loading="lazy" /></figure>
-          <div className="body-axis" aria-hidden="true"><i/><i/><i/><i/><span/></div>
-        </div>
+        <p className="lead">Программа курса охватывает всё тело и постепенно соединяет отдельные зоны в согласованное движение.</p>
         <div className="zones">{bodyZones.map(([title, text], index) => <article key={title}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
         <div className="course-outro"><strong>Мы не пытаемся исправить каждую зону отдельно. Мы учим тело снова работать как единую систему.</strong><p>Курс не рассчитан на самостоятельную работу при остром состоянии, свежей травме, резком ухудшении самочувствия или симптомах, которые требуют очной медицинской оценки.</p></div>
         <Cta />
