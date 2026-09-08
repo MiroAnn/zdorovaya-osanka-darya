@@ -148,7 +148,7 @@ export default function Home() {
       <section className="recognition" id="for-whom">
         <img className="recognition-person" src="/puzzled-person.png" alt="Человек с недоумевающим выражением лица" width="1536" height="1024" loading="lazy" />
         <div className="shape shape-two"/>
-        <div className="section-heading"><p className="eyebrow">Для кого</p><h2>Для тех, кто не уверен</h2></div>
+        <div className="section-heading"><h2>Для тех, кто не уверен</h2></div>
         <div className="recognition-grid">{recognitionItems.map((item, index) => <article key={item}><span>{String(index + 1).padStart(2, "0")}</span><p>{item}</p></article>)}</div>
         <p className="large-conclusion">На курсе «Здоровая осанка» мы будем работать со всем этим: разберём вашу исходную ситуацию, подберём персональные акценты, выстроим последовательную нагрузку и будем следить за техникой и регулярностью занятий.</p>
       </section>
