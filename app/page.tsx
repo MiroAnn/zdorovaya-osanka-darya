@@ -148,6 +148,7 @@ export default function Home() {
       </section>
 
       <section className="consequences">
+        <div className="orbit-graphic" aria-hidden="true"><i/><i/><i/></div>
         <div className="section-heading wide"><h2>Плохая осанка может привести к множеству проблем</h2></div>
         <div className="two-columns">
           <div className="body-copy">
@@ -158,12 +159,20 @@ export default function Home() {
           <CheckList items={consequences}/>
         </div>
         <div className="note"><p>Не каждая боль вызвана осанкой. Но если проблема связана с тем, как тело двигается и распределяет нагрузку, работать только с местом боли часто недостаточно.</p><strong>Короткий вывод: чтобы изменить осанку, нужно работать со всем телом — от стоп до положения головы.</strong></div>
+        <figure className="movement-strip">
+          <img src="/movement-side-stretch.png" alt="Человек выполняет мягкое боковое вытяжение" width="1536" height="1024" loading="lazy" />
+          <div className="movement-line" aria-hidden="true"><span/><span/><span/></div>
+        </figure>
       </section>
 
       <section className="course" id="course">
         <div className="section-heading"><h2>Что будет на курсе?</h2></div>
         <div className="facts"><article><strong>01</strong><p>Персонализированная программа ровно для ваших задач</p></article><article><strong>02</strong><p>Умная диагностика в начале и конце</p></article><article><strong>03</strong><p>15-20 минут упражнений в день</p></article><article><strong>04</strong><p>Нужны коврик и валик (дадим ссылки на озон)</p></article></div>
-        <p className="lead">Программа курса охватывает всё тело и постепенно соединяет отдельные зоны в согласованное движение.</p>
+        <div className="course-lead-visual">
+          <p className="lead">Программа курса охватывает всё тело и постепенно соединяет отдельные зоны в согласованное движение.</p>
+          <figure className="feet-visual"><img src="/feet-balance.png" alt="Стопы в движении на гимнастическом коврике" width="1122" height="1402" loading="lazy" /></figure>
+          <div className="body-axis" aria-hidden="true"><i/><i/><i/><i/><span/></div>
+        </div>
         <div className="zones">{bodyZones.map(([title, text], index) => <article key={title}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
         <div className="course-outro"><strong>Мы не пытаемся исправить каждую зону отдельно. Мы учим тело снова работать как единую систему.</strong><p>Курс не рассчитан на самостоятельную работу при остром состоянии, свежей травме, резком ухудшении самочувствия или симптомах, которые требуют очной медицинской оценки.</p></div>
         <Cta />
@@ -192,7 +201,7 @@ export default function Home() {
       </section>
 
       <section className="author">
-        <div className="author-photo"><div className="portrait-silhouette"><span>Фото Дарьи</span></div></div>
+        <div className="author-photo"><img src="/darya-original.png" alt="Дарья Кавуненко" width="877" height="1280" loading="lazy" /></div>
         <div><p className="eyebrow">Кто ведёт курс</p><h2>Дарья Кавуненко</h2><p>Врач-реабилитолог и специалист по двигательной терапии. Работает с нарушениями осанки, болью в спине и сколиозом, использует научно-доказательный подход.</p><p>Дарья рассматривает тело как связанную систему. Если меняется положение одного звена, нагрузка перераспределяется выше и ниже: между стопами, ногами, тазом, позвоночником, плечами и шеей.</p><p>Поэтому в её программах нет случайного набора упражнений и обещаний «выпрямить спину» одним движением. Есть оценка исходного состояния, комплексная работа со всем телом, постепенная нагрузка и наблюдение за результатом.</p></div>
       </section>
 
