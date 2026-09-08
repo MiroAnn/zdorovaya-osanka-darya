@@ -123,9 +123,8 @@ export default function Home() {
           <h1>Курс “Здоровая осанка” – 6 недель, после которых у вас вырастут крылья</h1>
           <Cta />
         </div>
-        <div className="portrait" role="img" aria-label="Место для фото Дарьи в белом халате с нарисованными крыльями за спиной">
-          <div className="wing wing-left"/><div className="wing wing-right"/>
-          <div className="portrait-silhouette"><span>Фото Дарьи</span></div>
+        <div className="portrait">
+          <img className="hero-portrait-image" src="/darya-with-wings.png" alt="Дарья Кавуненко в белом халате с нарисованными крыльями за спиной" width="1038" height="1536" fetchPriority="high" />
         </div>
         <p className="portrait-caption">Врач-реабилитолог  Дарья Кавуненко, которая помогла почти тысяче пациентов избавиться от болей в спине, шее, голове, ногах и суставах и почувствовать себя свободными и полными жизни.</p>
       </section>
