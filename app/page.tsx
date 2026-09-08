@@ -131,7 +131,12 @@ export default function Home() {
 
       <section className="fit-section">
         <div className="section-intro"><p className="eyebrow">Вам подойдет, если</p><span>01</span></div>
-        <div className="fit-grid">{fitItems.map((item, index) => <article key={item}><span>0{index + 1}</span><p>{item}</p></article>)}</div>
+        <div className="fit-content">
+          <figure className="fit-visual">
+            <img src="/back-pain-highlight.png" alt="Человек держится рукой за поясницу, зона боли подсвечена красным" width="1122" height="1402" loading="lazy" />
+          </figure>
+          <div className="fit-grid">{fitItems.map((item, index) => <article key={item}><span>0{index + 1}</span><p>{item}</p></article>)}</div>
+        </div>
         <Cta />
       </section>
 
