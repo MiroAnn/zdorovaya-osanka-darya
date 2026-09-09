@@ -177,7 +177,7 @@ export default function Home() {
 
       <section className="course" id="course">
         <div className="section-heading"><h2>На курсе будем работать со всем телом</h2></div>
-        <div className="facts"><article><strong>Программа</strong><p>персонализированная ровно для ваших задач</p></article><article><strong>Диагностика</strong><p>в начале и конце</p></article><article><strong>15-20</strong><p>минут упражнений в день</p></article><article><strong>Коврик и валик</strong><p>для упражнений (дадим ссылки на озон)</p></article></div>
+        <div className="facts"><article><strong>Программа</strong><p>персонализированная ровно для ваших задач</p></article><article><strong>Диагностика</strong><p>в начале и конце</p></article><article><strong>15-20 минут</strong><p>– упражнений в день</p></article><article><strong>Коврик и валик</strong><p>для упражнений (дадим ссылки на озон)</p></article></div>
         <p className="lead">Вы не будете делать упражнения на разные зоны отдельно — это будет единая согласованная система.</p>
         <div className="zones">{bodyZones.map(([title, text], index) => <article key={title}><ZoneIcon index={index}/><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
         <div className="course-outro"><div className="course-outro-copy"><Cta /></div><p className="course-warning">Курс не рассчитан на самостоятельную работу при остром состоянии, свежей травме, резком ухудшении самочувствия или симптомах, которые требуют очной медицинской оценки.</p></div>

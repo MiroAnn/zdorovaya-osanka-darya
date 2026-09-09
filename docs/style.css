@@ -167,3 +167,4 @@ main{overflow:visible}
 .fit-section{padding-top:55px}
 @media(max-width:560px){.fit-section{padding-top:38px}}
 .hero .cta-wrap>span{display:none}
+@media(min-width:901px){.recognition .section-heading{max-width:none}.recognition .section-heading h2{white-space:nowrap}}
