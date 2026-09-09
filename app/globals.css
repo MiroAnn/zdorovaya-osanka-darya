@@ -72,10 +72,12 @@ main{overflow:visible}
 @media(min-width:901px){
   .hero{min-height:820px;isolation:isolate}
   .hero-copy{z-index:3}
-  .portrait{position:absolute;z-index:1;inset:18px 1.5% 36px 13%;min-height:0;margin:0;overflow:visible;border-radius:0;background:transparent;pointer-events:none}
+  .portrait{position:absolute;z-index:1;inset:-36px 1.5% 90px 13%;min-height:0;margin:0;overflow:visible;border-radius:0;background:transparent;pointer-events:none}
   .hero-portrait-image{width:100%;height:100%;min-height:0;object-fit:contain;object-position:center bottom}
-  .portrait-caption{position:relative;z-index:3;margin-top:16px}
+  .portrait-caption{position:relative;z-index:3;max-width:650px;margin-top:16px}
 }
+.caption-final-phrase{display:block}
+.note{grid-template-columns:1fr}
 @media(max-width:900px){
   .portrait{min-height:0;aspect-ratio:2/1;overflow:visible;border-radius:0;background:transparent}
   .hero-portrait-image{width:100%;height:100%;min-height:0;object-fit:contain;object-position:center}
@@ -151,3 +153,6 @@ main{overflow:visible}
 .zone-icon--spine b{left:32px;top:17px;width:7px;height:7px;border:1.5px solid currentColor;border-radius:50%;background:var(--chalk);box-shadow:1px 10px 0 -1px var(--chalk),1px 10px 0 0 currentColor,-1px 20px 0 -1px var(--chalk),-1px 20px 0 0 currentColor,1px 30px 0 -1px var(--chalk),1px 30px 0 0 currentColor,0 40px 0 -1px var(--chalk),0 40px 0 0 currentColor}
 .zone-icon--spine em{left:19px;top:17px;width:38px;height:40px;border-left:1px solid rgba(79,113,130,.35);border-right:1px solid rgba(79,113,130,.35);border-radius:48%}
 @media(max-width:560px){.zones article{grid-template-columns:72px minmax(0,1fr);gap:14px;padding:28px 0}.zone-icon{transform:scale(.8);transform-origin:left center}.zones h3{font-size:24px}.zones p{font-size:16px}}
+.result-panel .check-list li:before{content:"✓";top:13px;color:#9ed39f;font-size:22px;font-weight:700;line-height:1}
+.tariff-card .check-list li:before{content:"";top:23px;left:5px;width:9px;height:9px;border-radius:50%;background:var(--coral)}
+.four-parts h4{margin-top:0}
