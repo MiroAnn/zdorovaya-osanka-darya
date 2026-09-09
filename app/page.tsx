@@ -189,6 +189,7 @@ export default function Home() {
       </section>
 
       <section className="results" id="results">
+        <img className="results-family-art" src="/results-family-sports.png" alt="" width="2007" height="783" loading="lazy" aria-hidden="true" />
         <div className="section-heading"><p className="eyebrow">Результат</p><h2>Какого результата можно ожидать</h2></div>
         <p className="lead">Результат зависит от исходного состояния и запроса. Для одного человека главным изменением станет уменьшение напряжения после рабочего дня. Для другого — более свободное движение в пояснице, суставах или стопах.</p>
         <div className="result-panel"><h3>К концу курса вы сможете:</h3><CheckList items={resultItems}/></div>
