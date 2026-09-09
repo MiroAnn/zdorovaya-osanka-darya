@@ -132,7 +132,8 @@ export default function Home() {
           <Cta />
         </div>
         <div className="portrait">
-          <img className="hero-portrait-image" src="/darya-wide-wings-transparent.webp" alt="Дарья Кавуненко в белом халате с широкими акварельными крыльями за спиной" width="1774" height="887" fetchPriority="high" />
+          <img className="hero-motion-illustration" src="/hero-motion-figures.png" alt="" width="1774" height="887" aria-hidden="true" />
+          <img className="hero-darya-photo" src="/darya-original.png" alt="Дарья Кавуненко" width="877" height="1280" fetchPriority="high" />
         </div>
         <p className="portrait-caption">Врач-реабилитолог  Дарья Кавуненко, которая помогла почти тысяче пациентов избавиться от болей в спине, шее, голове, ногах и суставах и почувствовать себя свободными <span className="caption-final-phrase">и полными жизни.</span></p>
       </section>
@@ -160,8 +161,7 @@ export default function Home() {
         <div className="section-heading wide"><h2>Плохая осанка может привести к множеству проблем</h2></div>
         <div className="two-columns">
           <div className="body-copy">
-            <p>Осанка — это не только положение спины на фотографии. Это то, как стопы принимают нагрузку, как двигаются колени и тазобедренные суставы, в каком положении находится таз, как работают позвоночник, грудная клетка, плечи и шея.</p>
-            <p>Если в этой системе нарушается подвижность, сила или координация, тело начинает перераспределять нагрузку. Одни мышцы постоянно перенапрягаются, другие включаются недостаточно. Компенсация может проявляться в разных местах.</p>
+            <p>Осанка — это не только положение спины на фотографии. Это то, как работает все тело (таз, стопы, спина). Если система нарушается, тело начинает перераспределять нагрузку. Одни мышцы постоянно перенапрягаются, другие включаются недостаточно. Компенсация может проявляться в разных местах.</p>
             <p>Последствиями перенапряжения и плохой осанки могут быть:</p>
           </div>
         </div>
@@ -197,8 +197,8 @@ export default function Home() {
       <section className="tariffs" id="tariffs">
         <div className="section-heading"><h2>Тарифы</h2></div>
         <div className="tariff-grid">
-          <article className="tariff-card"><p className="tariff-number">01</p><h3>С куратором</h3><p>Для тех, кому нужна последовательная программа, понятный ритм и регулярная обратная связь.</p><h4>В тариф входит:</h4><CheckList items={curatorFeatures}/><div className="price"><strong>16 900 ₽</strong><span>— для первых 5 человек</span><p>Затем — <b>19 900 ₽</b></p></div><a className="button" href="#final">Выбрать тариф с куратором <Arrow /></a></article>
-          <article className="tariff-card tariff-card--accent"><p className="tariff-number">02</p><h3>С Дарьей</h3><p>Для тех, кому важны персональные комментарии врача и корректировка работы по ходу курса.</p><h4>Всё, что входит в тариф «С куратором», а также:</h4><CheckList items={daryaFeatures}/><div className="price"><strong>30 000 ₽</strong><span>— для первых 5 участников</span><p>Затем — <b>34 900 ₽</b></p></div><a className="button" href="#final">Выбрать сопровождение Дарьи <Arrow /></a></article>
+          <article className="tariff-card"><p className="tariff-number">01</p><h3>С куратором</h3><p>Для тех, кому нужна последовательная программа, понятный ритм и регулярная обратная связь.</p><h4>В тариф входит:</h4><CheckList items={curatorFeatures}/><div className="price"><div className="price-row"><strong>16 900 ₽</strong><del>19 900 ₽</del></div><p className="price-note">— для первых 5 участников</p></div><a className="button" href="#final">Выбрать тариф с куратором <Arrow /></a></article>
+          <article className="tariff-card tariff-card--accent"><p className="tariff-number">02</p><h3>С Дарьей</h3><p>Для тех, кому важны персональные комментарии врача и корректировка работы по ходу курса.</p><h4>Всё, что входит в тариф «С куратором», а также:</h4><CheckList items={daryaFeatures}/><div className="price"><div className="price-row"><strong>30 000 ₽</strong><del>34 900 ₽</del></div><p className="price-note">— для первых 5 участников</p></div><a className="button" href="#final">Выбрать сопровождение Дарьи <Arrow /></a></article>
         </div>
       </section>
 

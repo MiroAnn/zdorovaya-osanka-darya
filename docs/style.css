@@ -154,3 +154,9 @@ main{overflow:visible}
 .result-panel .check-list li:before{content:"✓";top:13px;color:#9ed39f;font-size:22px;font-weight:700;line-height:1}
 .tariff-card .check-list li:before{content:"";top:23px;left:5px;width:9px;height:9px;border-radius:50%;background:var(--coral)}
 .four-parts h4{margin-top:0}
+@media(min-width:901px){.course-outro{grid-template-columns:max-content minmax(0,1fr);gap:40px}}
+.price-row{display:flex;align-items:baseline;gap:22px;flex-wrap:wrap}.price-row strong{display:inline}.price-row del{color:var(--coral);font-size:27px;font-weight:700;text-decoration-thickness:2px}.price .price-note{margin:14px 0 0;font-size:22px;font-weight:700;line-height:1.25}
+.hero-motion-illustration,.hero-darya-photo{position:absolute;display:block;pointer-events:none}.hero-motion-illustration{inset:0;width:100%;height:100%;object-fit:contain;object-position:center}.hero-darya-photo{z-index:2;right:6%;bottom:-7%;width:auto;height:112%;object-fit:contain;object-position:center bottom}
+@media(min-width:901px){.portrait{inset:-58px 0 76px 0}}
+@media(max-width:900px){.portrait{aspect-ratio:4/3}.hero-motion-illustration{object-fit:cover}.hero-darya-photo{right:10%;bottom:-5%;height:108%}}
+@media(max-width:560px){.portrait{aspect-ratio:1/1}.hero-darya-photo{right:2%;height:102%}}
