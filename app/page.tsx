@@ -190,9 +190,11 @@ export default function Home() {
 
       <section className="results" id="results">
         <img className="results-family-art results-family-art--mobile" src="/results-family-sports.png" alt="" width="2007" height="783" loading="lazy" aria-hidden="true" />
-        <img className="results-tennis-woman" src="/results-tennis-woman.png" alt="" width="1423" height="1105" loading="lazy" aria-hidden="true" />
-        <div className="section-heading"><p className="eyebrow">Результат</p><h2>Какого результата можно ожидать</h2></div>
-        <p className="lead">Результат зависит от исходного состояния и запроса. Для одного человека главным изменением станет уменьшение напряжения после рабочего дня. Для другого — более свободное движение в пояснице, суставах или стопах.</p>
+        <div className="results-intro">
+          <img className="results-tennis-woman" src="/results-tennis-woman.png" alt="" width="1423" height="1105" loading="lazy" aria-hidden="true" />
+          <div className="section-heading"><p className="eyebrow">Результат</p><h2>Какого результата можно ожидать</h2></div>
+          <p className="lead">Результат зависит от исходного состояния и запроса. Для одного человека главным изменением станет уменьшение напряжения после рабочего дня. Для другого — более свободное движение в пояснице, суставах или стопах.</p>
+        </div>
         <div className="result-panel"><h3>К концу курса вы сможете:</h3><CheckList items={resultItems}/></div>
         <p className="disclaimer">Мы не обещаем, что за 6 недель исчезнет любая боль или полностью исправится осанка. На динамику влияют исходное состояние, регулярность занятий и индивидуальные ограничения. Задача курса — найти связанные с осанкой проблемы, начать их корректировать и дать вам систему для продолжения работы.</p>
         <h3 className="cases-title">Результаты Дашиных учеников за честные 6 недель занятий:</h3>

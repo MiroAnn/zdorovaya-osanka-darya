@@ -170,14 +170,15 @@ main{overflow:visible}
 @media(max-width:560px){.fit-section{padding-top:38px}}
 .hero .cta-wrap>span{display:none}
 @media(min-width:901px){.recognition .section-heading{max-width:none}.recognition .section-heading h2{white-space:nowrap}}
-@media(min-width:901px){.hero .cta-wrap{transform:translateY(-70px)}.hero-motion-illustration{transform:translate(64px,-24px)}}
+@media(min-width:901px){.hero .cta-wrap{transform:translateY(22px)}.hero-motion-illustration{transform:translate(64px,-24px)}}
 
 /* Airy watercolor family scene behind the results introduction. */
 .results{position:relative;isolation:isolate;overflow:hidden}
+.results-intro{position:relative;z-index:1;display:flow-root}
 .results-family-art{position:absolute;z-index:0;top:42px;left:50%;display:block;width:min(1540px,112vw);height:auto;max-width:none;transform:translateX(-50%);opacity:.2;pointer-events:none;filter:saturate(.82)}
 .results-tennis-woman{display:none}
 .results:before{content:"";position:absolute;z-index:0;inset:0 0 auto;height:720px;background:linear-gradient(90deg,rgba(247,247,242,.68) 0%,rgba(247,247,242,.32) 42%,rgba(247,247,242,.58) 100%);pointer-events:none}
-.results>.section-heading,.results>.lead,.results>.result-panel,.results>.disclaimer,.results>.cases-title,.results>.cases{position:relative;z-index:1}
-@media(min-width:901px){.results-family-art--mobile{display:none}.results-tennis-woman{position:absolute;z-index:0;top:30px;right:max(-20px,calc((100vw - 1440px)/2));display:block;width:min(620px,43vw);height:auto;opacity:.78;transform:scaleX(-1);pointer-events:none;filter:saturate(1.12) contrast(1.03)}}
+.results-intro>.section-heading,.results-intro>.lead,.results>.result-panel,.results>.disclaimer,.results>.cases-title,.results>.cases{position:relative;z-index:1}
+@media(min-width:901px){.results-family-art--mobile{display:none}.results-tennis-woman{position:absolute;z-index:0;right:max(-80px,calc((100vw - 1440px)/2 - 60px));bottom:-10px;display:block;width:min(760px,52vw);height:auto;opacity:.82;transform:scaleX(-1);pointer-events:none;filter:saturate(1.14) contrast(1.04)}}
 @media(max-width:900px){.results-family-art{top:80px;width:175%;opacity:.16}.results:before{height:650px;background:rgba(247,247,242,.54)}}
 @media(max-width:560px){.results-family-art{top:118px;left:54%;width:245%;opacity:.13}.results:before{height:620px}}
