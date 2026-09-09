@@ -166,3 +166,4 @@ main{overflow:visible}
 @media(min-width:901px){.portrait-caption{margin-top:-24px;padding-top:0;border-top:0}}
 .fit-section{padding-top:55px}
 @media(max-width:560px){.fit-section{padding-top:38px}}
+.hero .cta-wrap>span{display:none}
