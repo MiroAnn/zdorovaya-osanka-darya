@@ -168,7 +168,7 @@ main{overflow:visible}
 @media(max-width:560px){.fit-section{padding-top:38px}}
 .hero .cta-wrap>span{display:none}
 @media(min-width:901px){.recognition .section-heading{max-width:none}.recognition .section-heading h2{white-space:nowrap}}
-@media(min-width:901px){.hero .cta-wrap{transform:translateY(-82px)}.hero-motion-illustration{transform:translateY(-24px)}}
+@media(min-width:901px){.hero .cta-wrap{transform:translateY(-70px)}.hero-motion-illustration{transform:translate(64px,-24px)}}
 
 /* Airy watercolor family scene behind the results introduction. */
 .results{position:relative;isolation:isolate;overflow:hidden}
@@ -176,6 +176,6 @@ main{overflow:visible}
 .results-tennis-woman{display:none}
 .results:before{content:"";position:absolute;z-index:0;inset:0 0 auto;height:720px;background:linear-gradient(90deg,rgba(247,247,242,.68) 0%,rgba(247,247,242,.32) 42%,rgba(247,247,242,.58) 100%);pointer-events:none}
 .results>.section-heading,.results>.lead,.results>.result-panel,.results>.disclaimer,.results>.cases-title,.results>.cases{position:relative;z-index:1}
-@media(min-width:901px){.results-family-art--mobile{display:none}.results-tennis-woman{position:absolute;z-index:0;top:54px;right:max(8px,calc((100vw - 1400px)/2));display:block;width:min(520px,38vw);height:auto;opacity:.34;transform:scaleX(-1);pointer-events:none;filter:saturate(.82)}}
+@media(min-width:901px){.results-family-art--mobile{display:none}.results-tennis-woman{position:absolute;z-index:0;top:30px;right:max(-20px,calc((100vw - 1440px)/2));display:block;width:min(620px,43vw);height:auto;opacity:.78;transform:scaleX(-1);pointer-events:none;filter:saturate(1.12) contrast(1.03)}}
 @media(max-width:900px){.results-family-art{top:80px;width:175%;opacity:.16}.results:before{height:650px;background:rgba(247,247,242,.54)}}
 @media(max-width:560px){.results-family-art{top:118px;left:54%;width:245%;opacity:.13}.results:before{height:620px}}
