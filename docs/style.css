@@ -170,6 +170,7 @@ main{overflow:visible}
 .hero .cta-wrap>span{display:none}
 @media(min-width:901px){.recognition .section-heading{max-width:none}.recognition .section-heading h2{white-space:nowrap}}
 @media(min-width:901px){.hero{row-gap:40px}.hero .cta-wrap{transform:none}.hero-motion-illustration{transform:translate(64px,-24px)}}
+@media(min-width:901px){.hero{overflow:hidden}.portrait{overflow:hidden}.hero-darya-photo{top:-7%;right:8%;bottom:auto;height:145%}}
 
 /* Airy watercolor family scene behind the results introduction. */
 .results{position:relative;isolation:isolate;overflow:hidden}
