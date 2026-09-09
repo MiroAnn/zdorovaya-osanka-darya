@@ -168,7 +168,7 @@ main{overflow:visible}
 @media(max-width:560px){.fit-section{padding-top:38px}}
 .hero .cta-wrap>span{display:none}
 @media(min-width:901px){.recognition .section-heading{max-width:none}.recognition .section-heading h2{white-space:nowrap}}
-@media(min-width:901px){.hero .cta-wrap{transform:translateY(-36px)}}
+@media(min-width:901px){.hero .cta-wrap{transform:translateY(-82px)}.hero-motion-illustration{transform:translateY(-24px)}}
 
 /* Airy watercolor family scene behind the results introduction. */
 .results{position:relative;isolation:isolate;overflow:hidden}
