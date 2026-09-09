@@ -163,3 +163,4 @@ main{overflow:visible}
 @media(max-width:900px){.portrait{aspect-ratio:4/3}.hero-motion-illustration{object-fit:cover}.hero-darya-photo{right:10%;bottom:0;height:96%}}
 @media(max-width:560px){.portrait{aspect-ratio:1/1}.hero-darya-photo{right:2%;height:92%}}
 .hero{border-bottom:8px solid var(--coral)}
+@media(max-width:560px){.hero{border-bottom:0}}
