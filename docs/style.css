@@ -163,12 +163,13 @@ main{overflow:visible}
 .hero{border-bottom:0}
 @media(min-width:901px){.hero:after{content:"";position:absolute;z-index:4;left:0;right:0;bottom:34px;height:8px;background:var(--blue);pointer-events:none}}
 @media(min-width:561px) and (max-width:900px){.hero{border-bottom:8px solid var(--blue)}}
-@media(min-width:901px){.portrait-caption{margin-top:-24px;padding-top:0;border-top:0}}
+@media(min-width:901px){.portrait-caption{margin-top:0;padding-top:0;border-top:0}}
 .fit-section{padding-top:55px}
 @media(max-width:560px){.fit-section{padding-top:38px}}
+.hero .cta-wrap{position:relative;z-index:5;margin-bottom:0}
 .hero .cta-wrap>span{display:none}
 @media(min-width:901px){.recognition .section-heading{max-width:none}.recognition .section-heading h2{white-space:nowrap}}
-@media(min-width:901px){.hero .cta-wrap{transform:translateY(22px)}.hero-motion-illustration{transform:translate(64px,-24px)}}
+@media(min-width:901px){.hero{row-gap:40px}.hero .cta-wrap{transform:none}.hero-motion-illustration{transform:translate(64px,-24px)}}
 
 /* Airy watercolor family scene behind the results introduction. */
 .results{position:relative;isolation:isolate;overflow:hidden}
