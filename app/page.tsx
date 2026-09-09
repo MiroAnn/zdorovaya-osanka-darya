@@ -132,7 +132,10 @@ export default function Home() {
           <Cta />
         </div>
         <div className="portrait">
-          <img className="hero-motion-illustration" src="/hero-motion-figures.png" alt="" width="1774" height="887" aria-hidden="true" />
+          <picture>
+            <source media="(max-width: 900px)" srcSet="/hero-motion-figures-mobile.png" />
+            <img className="hero-motion-illustration" src="/hero-motion-figures.png" alt="" width="1774" height="887" aria-hidden="true" />
+          </picture>
           <img className="hero-darya-photo" src="/darya-original.png" alt="Дарья Кавуненко" width="877" height="1280" fetchPriority="high" />
         </div>
         <p className="portrait-caption">Врач-реабилитолог  Дарья Кавуненко, которая помогла почти тысяче пациентов избавиться от болей в спине, шее, голове, ногах и суставах и почувствовать себя свободными <span className="caption-final-phrase">и полными жизни.</span></p>
