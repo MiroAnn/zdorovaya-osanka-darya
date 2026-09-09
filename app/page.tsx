@@ -142,7 +142,7 @@ export default function Home() {
       </section>
 
       <section className="fit-section">
-        <div className="section-intro"><p className="eyebrow">Вам подойдет, если</p><span>01</span></div>
+        <div className="section-heading"><h2>Вам подойдет, если</h2></div>
         <div className="fit-content">
           <figure className="fit-visual">
             <img src="/back-pain-highlight.png" alt="Человек держится рукой за поясницу, зона боли подсвечена красным" width="1122" height="1402" loading="lazy" />
