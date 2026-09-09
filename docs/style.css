@@ -161,8 +161,8 @@ main{overflow:visible}
 @media(max-width:900px){.portrait{aspect-ratio:4/3}.hero-motion-illustration{object-fit:cover}.hero-darya-photo{right:10%;bottom:0;height:96%}}
 @media(max-width:560px){.portrait{aspect-ratio:1/1}.hero-darya-photo{right:2%;height:92%}}
 .hero{border-bottom:0}
-@media(min-width:901px){.hero:after{content:"";position:absolute;z-index:4;left:0;right:0;bottom:34px;height:8px;background:var(--coral);pointer-events:none}}
-@media(min-width:561px) and (max-width:900px){.hero{border-bottom:8px solid var(--coral)}}
+@media(min-width:901px){.hero:after{content:"";position:absolute;z-index:4;left:0;right:0;bottom:34px;height:8px;background:var(--blue);pointer-events:none}}
+@media(min-width:561px) and (max-width:900px){.hero{border-bottom:8px solid var(--blue)}}
 @media(min-width:901px){.portrait-caption{margin-top:-24px;padding-top:0;border-top:0}}
 .fit-section{padding-top:55px}
 @media(max-width:560px){.fit-section{padding-top:38px}}
