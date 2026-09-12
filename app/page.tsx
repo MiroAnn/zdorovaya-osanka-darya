@@ -207,7 +207,6 @@ export default function Home() {
             <p className="eyebrow">До и после</p>
             <h3 className="cases-title">Результаты Дашиных учеников за честные 6 недель занятий</h3>
           </div>
-          <p>Листайте вправо и влево, чтобы рассмотреть изменения.</p>
         </div>
         <div className="cases-carousel" data-case-carousel aria-label="Фотографии результатов до и после курса">
           <button className="case-stream-arrow case-stream-arrow--previous" data-carousel-previous type="button" aria-label="Показать предыдущие результаты">←</button>
