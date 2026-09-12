@@ -59,6 +59,11 @@ const resultItems = [
   "получить план дальнейшей работы после курса (на тарифе VIP)",
 ];
 
+const resultCases = Array.from({ length: 9 }, (_, index) => ({
+  id: index + 1,
+  image: `/result-before-after-${String(index + 1).padStart(2, "0")}.jpg`,
+}));
+
 const curatorFeatures = [
   "стартовая оценка осанки по анкете",
   "6 тренировок с постепенным усложнением",
@@ -204,46 +209,28 @@ export default function Home() {
           </div>
           <p>Листайте вправо и влево, чтобы рассмотреть изменения.</p>
         </div>
-        <div className="cases-carousel" aria-label="Фотография результата до и после курса">
+        <div className="cases-carousel" aria-label="Фотографии результатов до и после курса">
           <div className="cases-track">
-            <article className="case-slide" id="case-comparison">
-              <figure className="case-photo case-photo--comparison">
-                <img src="/result-before-after-01.jpg" alt="Сравнение осанки ученицы до и после шести недель занятий, вид со спины" width="720" height="1280" loading="lazy" />
-                <figcaption><span>До</span><span>После</span></figcaption>
-              </figure>
-              <div className="case-caption"><span>01</span><p>Изменения осанки за 6 недель занятий</p></div>
-              <nav className="case-arrows" aria-label="Навигация по фотографиям результата">
-                <a href="#case-after" aria-label="Предыдущая фотография">←</a>
-                <a href="#case-before" aria-label="Следующая фотография">→</a>
-              </nav>
-            </article>
-            <article className="case-slide" id="case-before">
-              <figure className="case-photo case-photo--crop case-photo--before">
-                <img src="/result-before-after-01.jpg" alt="Осанка ученицы до начала занятий, вид со спины" width="720" height="1280" loading="lazy" />
-                <figcaption><span>До</span></figcaption>
-              </figure>
-              <div className="case-caption"><span>До</span><p>Исходное положение до начала курса</p></div>
-              <nav className="case-arrows" aria-label="Навигация по фотографиям результата">
-                <a href="#case-comparison" aria-label="Предыдущая фотография">←</a>
-                <a href="#case-after" aria-label="Следующая фотография">→</a>
-              </nav>
-            </article>
-            <article className="case-slide" id="case-after">
-              <figure className="case-photo case-photo--crop case-photo--after">
-                <img src="/result-before-after-01.jpg" alt="Осанка ученицы после шести недель занятий, вид со спины" width="720" height="1280" loading="lazy" />
-                <figcaption><span>После</span></figcaption>
-              </figure>
-              <div className="case-caption"><span>После</span><p>Результат после шести недель регулярных занятий</p></div>
-              <nav className="case-arrows" aria-label="Навигация по фотографиям результата">
-                <a href="#case-before" aria-label="Предыдущая фотография">←</a>
-                <a href="#case-comparison" aria-label="Следующая фотография">→</a>
-              </nav>
-            </article>
+            {resultCases.map(({ id, image }, index) => {
+              const previousId = resultCases[(index - 1 + resultCases.length) % resultCases.length].id;
+              const nextId = resultCases[(index + 1) % resultCases.length].id;
+              return (
+                <article className="case-slide" id={`case-${id}`} key={image}>
+                  <figure className="case-photo">
+                    <img src={image} alt={`Сравнение осанки ученика до и после курса, результат ${id}`} width="960" height="1440" loading="lazy" />
+                    <figcaption><span>До</span><span>После</span></figcaption>
+                  </figure>
+                  <div className="case-caption"><span>{String(id).padStart(2, "0")} / {resultCases.length}</span><p>Изменения осанки за курс занятий</p></div>
+                  <nav className="case-arrows" aria-label={`Навигация по результату ${id}`}>
+                    <a href={`#case-${previousId}`} aria-label="Предыдущий результат">←</a>
+                    <a href={`#case-${nextId}`} aria-label="Следующий результат">→</a>
+                  </nav>
+                </article>
+              );
+            })}
           </div>
           <div className="case-dots" aria-label="Выбор фотографии">
-            <a href="#case-comparison" aria-label="Показать сравнение до и после" />
-            <a href="#case-before" aria-label="Показать фотографию до" />
-            <a href="#case-after" aria-label="Показать фотографию после" />
+            {resultCases.map(({ id }) => <a href={`#case-${id}`} aria-label={`Показать результат ${id}`} key={id} />)}
           </div>
         </div>
       </section>
