@@ -4,7 +4,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const output = path.join(root, "docs");
-const response = await fetch("http://127.0.0.1:3000/");
+const response = await fetch("http://localhost:3000/");
 
 if (!response.ok) {
   throw new Error(`Could not render the homepage: ${response.status}`);

@@ -197,8 +197,55 @@ export default function Home() {
         </div>
         <div className="result-panel"><h3>К концу курса вы сможете:</h3><CheckList items={resultItems}/></div>
         <p className="disclaimer">Мы не обещаем, что за 6 недель исчезнет любая боль или полностью исправится осанка. На динамику влияют исходное состояние, регулярность занятий и индивидуальные ограничения. Задача курса — найти связанные с осанкой проблемы, начать их корректировать и дать вам систему для продолжения работы.</p>
-        <h3 className="cases-title">Результаты Дашиных учеников за честные 6 недель занятий:</h3>
-        <div className="cases" aria-label="Место для пяти кейсов с фотографиями до и после">{[1,2,3,4,5].map((item) => <article key={item}><div><span>до</span><span>после</span></div></article>)}</div>
+        <div className="cases-heading">
+          <div>
+            <p className="eyebrow">До и после</p>
+            <h3 className="cases-title">Результаты Дашиных учеников за честные 6 недель занятий</h3>
+          </div>
+          <p>Листайте вправо и влево, чтобы рассмотреть изменения.</p>
+        </div>
+        <div className="cases-carousel" aria-label="Фотография результата до и после курса">
+          <div className="cases-track">
+            <article className="case-slide" id="case-comparison">
+              <figure className="case-photo case-photo--comparison">
+                <img src="/result-before-after-01.jpg" alt="Сравнение осанки ученицы до и после шести недель занятий, вид со спины" width="720" height="1280" loading="lazy" />
+                <figcaption><span>До</span><span>После</span></figcaption>
+              </figure>
+              <div className="case-caption"><span>01</span><p>Изменения осанки за 6 недель занятий</p></div>
+              <nav className="case-arrows" aria-label="Навигация по фотографиям результата">
+                <a href="#case-after" aria-label="Предыдущая фотография">←</a>
+                <a href="#case-before" aria-label="Следующая фотография">→</a>
+              </nav>
+            </article>
+            <article className="case-slide" id="case-before">
+              <figure className="case-photo case-photo--crop case-photo--before">
+                <img src="/result-before-after-01.jpg" alt="Осанка ученицы до начала занятий, вид со спины" width="720" height="1280" loading="lazy" />
+                <figcaption><span>До</span></figcaption>
+              </figure>
+              <div className="case-caption"><span>До</span><p>Исходное положение до начала курса</p></div>
+              <nav className="case-arrows" aria-label="Навигация по фотографиям результата">
+                <a href="#case-comparison" aria-label="Предыдущая фотография">←</a>
+                <a href="#case-after" aria-label="Следующая фотография">→</a>
+              </nav>
+            </article>
+            <article className="case-slide" id="case-after">
+              <figure className="case-photo case-photo--crop case-photo--after">
+                <img src="/result-before-after-01.jpg" alt="Осанка ученицы после шести недель занятий, вид со спины" width="720" height="1280" loading="lazy" />
+                <figcaption><span>После</span></figcaption>
+              </figure>
+              <div className="case-caption"><span>После</span><p>Результат после шести недель регулярных занятий</p></div>
+              <nav className="case-arrows" aria-label="Навигация по фотографиям результата">
+                <a href="#case-before" aria-label="Предыдущая фотография">←</a>
+                <a href="#case-comparison" aria-label="Следующая фотография">→</a>
+              </nav>
+            </article>
+          </div>
+          <div className="case-dots" aria-label="Выбор фотографии">
+            <a href="#case-comparison" aria-label="Показать сравнение до и после" />
+            <a href="#case-before" aria-label="Показать фотографию до" />
+            <a href="#case-after" aria-label="Показать фотографию после" />
+          </div>
+        </div>
       </section>
 
       <section className="tariffs" id="tariffs">
