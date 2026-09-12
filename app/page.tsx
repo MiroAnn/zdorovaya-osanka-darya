@@ -209,29 +209,20 @@ export default function Home() {
           </div>
           <p>Листайте вправо и влево, чтобы рассмотреть изменения.</p>
         </div>
-        <div className="cases-carousel" aria-label="Фотографии результатов до и после курса">
-          <div className="cases-track">
-            {resultCases.map(({ id, image }, index) => {
-              const previousId = resultCases[(index - 1 + resultCases.length) % resultCases.length].id;
-              const nextId = resultCases[(index + 1) % resultCases.length].id;
-              return (
-                <article className="case-slide" id={`case-${id}`} key={image}>
-                  <figure className="case-photo">
-                    <img src={image} alt={`Сравнение осанки ученика до и после курса, результат ${id}`} width="960" height="1440" loading="lazy" />
-                    <figcaption><span>До</span><span>После</span></figcaption>
-                  </figure>
-                  <div className="case-caption"><span>{String(id).padStart(2, "0")} / {resultCases.length}</span><p>Изменения осанки за курс занятий</p></div>
-                  <nav className="case-arrows" aria-label={`Навигация по результату ${id}`}>
-                    <a href={`#case-${previousId}`} aria-label="Предыдущий результат">←</a>
-                    <a href={`#case-${nextId}`} aria-label="Следующий результат">→</a>
-                  </nav>
-                </article>
-              );
-            })}
+        <div className="cases-carousel" data-case-carousel aria-label="Фотографии результатов до и после курса">
+          <button className="case-stream-arrow case-stream-arrow--previous" data-carousel-previous type="button" aria-label="Показать предыдущие результаты">←</button>
+          <div className="cases-track" data-carousel-track tabIndex={0}>
+            {resultCases.map(({ id, image }) => (
+              <article className="case-slide" key={image}>
+                <figure className="case-photo">
+                  <img src={image} alt={`Сравнение осанки участника до и после курса, результат ${id}`} width="960" height="1440" loading="lazy" />
+                  <figcaption><span>До</span><span>После</span></figcaption>
+                </figure>
+                <span className="case-number">{String(id).padStart(2, "0")} / {resultCases.length}</span>
+              </article>
+            ))}
           </div>
-          <div className="case-dots" aria-label="Выбор фотографии">
-            {resultCases.map(({ id }) => <a href={`#case-${id}`} aria-label={`Показать результат ${id}`} key={id} />)}
-          </div>
+          <button className="case-stream-arrow case-stream-arrow--next" data-carousel-next type="button" aria-label="Показать следующие результаты">→</button>
         </div>
       </section>
 
@@ -261,6 +252,7 @@ export default function Home() {
         <Cta secondary />
       </section>
       <footer><span>Здоровая осанка</span><span>Дарья Кавуненко</span></footer>
+      <script src="/carousel.js" defer></script>
     </main>
   );
 }
