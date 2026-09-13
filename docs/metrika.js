@@ -23,3 +23,15 @@ ym(112548668, "init", {
   accurateTrackBounce: true,
   trackLinks: true,
 });
+
+document.addEventListener("click", function (event) {
+  if (!(event.target instanceof Element)) return;
+
+  var button = event.target.closest("a.button, a.header-button");
+  if (!button) return;
+
+  window.ym(112548668, "reachGoal", "all_buttons_click", {
+    button_text: (button.textContent || "").trim().replace(/\s+/g, " ").slice(0, 120),
+    button_href: button.getAttribute("href") || "",
+  });
+});
