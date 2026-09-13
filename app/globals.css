@@ -75,13 +75,14 @@ main{width:100%;max-width:100%;overflow-x:clip}
 .fit-icon--posture i{left:19px;top:3px;width:2px;height:36px;background:currentColor}.fit-icon--posture:before,.fit-icon--posture:after{content:"";position:absolute;top:6px;width:17px;height:27px;border:2px solid currentColor}.fit-icon--posture:before{left:3px;border-right:0;border-radius:100% 0 0 100%}.fit-icon--posture:after{right:3px;border-left:0;border-radius:0 100% 100% 0}
 .fit-icon--stoop i{left:3px;top:7px;width:30px;height:28px;border-top:2px solid currentColor;border-left:2px solid currentColor;border-radius:100% 0 0 0;transform:rotate(12deg)}.fit-icon--stoop b{right:2px;top:2px;width:10px;height:10px;border:2px solid currentColor;border-radius:50%}
 
-.recognition{background:#557081}
-.recognition-person{position:absolute;z-index:0;top:0;right:0;width:76%;height:1040px;object-fit:cover;object-position:right top;opacity:.92;mix-blend-mode:screen;pointer-events:none}
-.recognition:before{content:"";position:absolute;z-index:1;inset:0;background:linear-gradient(90deg,#557081 0%,rgba(85,112,129,.98) 23%,rgba(85,112,129,.35) 72%,rgba(85,112,129,.08) 100%);pointer-events:none}
+.recognition{background:radial-gradient(circle at 12% 12%,rgba(243,211,220,.95) 0,rgba(243,211,220,.52) 24%,transparent 52%),radial-gradient(circle at 88% 78%,rgba(207,229,220,.94) 0,rgba(207,229,220,.5) 28%,transparent 56%),linear-gradient(135deg,#fbf5f4 0%,#f7f5f2 48%,#f2f8f4 100%);color:var(--ink)}
+.recognition-person{position:absolute;z-index:0;top:0;right:0;width:76%;height:1040px;object-fit:cover;object-position:right top;opacity:.72;mix-blend-mode:screen;pointer-events:none}
+.recognition:before{content:"";position:absolute;z-index:1;inset:0;background:linear-gradient(90deg,rgba(251,245,244,.98) 0%,rgba(251,245,244,.9) 24%,rgba(247,245,242,.32) 66%,rgba(242,248,244,.08) 100%);pointer-events:none}
 .recognition .section-heading,.recognition-grid,.recognition .large-conclusion{position:relative;z-index:2}
-.recognition-grid article{background:rgba(32,37,37,.24);backdrop-filter:blur(1.5px)}
-.recognition .shape-two{z-index:1}
-@media(max-width:900px){.recognition-person{width:100%;height:760px;opacity:.74}.recognition:before{background:linear-gradient(180deg,rgba(85,112,129,.12),#557081 58%)}.recognition-grid article{background:rgba(32,37,37,.34)}}
+.recognition-grid{border-color:rgba(32,37,37,.2)}
+.recognition-grid article{background:rgba(255,255,255,.16);border-color:rgba(32,37,37,.2);backdrop-filter:blur(2px)}
+.recognition .shape-two{z-index:1;opacity:.08}
+@media(max-width:900px){.recognition-person{width:100%;height:760px;opacity:.6}.recognition:before{background:linear-gradient(180deg,rgba(251,245,244,.08),rgba(247,245,242,.94) 58%)}.recognition-grid article{background:rgba(255,255,255,.3)}}
 @media(max-width:560px){.recognition-person{height:620px;object-position:62% top}.recognition .section-heading{padding-bottom:190px}}
 
 /* Wide, uncropped hero wings with the headline intentionally layered above them. */
