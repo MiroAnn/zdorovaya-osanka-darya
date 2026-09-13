@@ -260,6 +260,7 @@ export default function Home() {
         <Cta secondary />
       </section>
       <footer><span>Здоровая осанка</span><span>Дарья Кавуненко</span></footer>
+      <script src="/metrika.js" defer></script>
       <script src="/carousel.js" defer></script>
     </main>
   );

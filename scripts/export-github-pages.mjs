@@ -22,7 +22,7 @@ html = html
   .replace(/\sdata-rsc-css-href="[^"]*"/g, "")
   .replace(/\sdata-precedence="[^"]*"/g, "")
   .replace(/(src|srcset|href)="\/(?!\/|#)/gi, '$1="./')
-  .replace("</body>", '<script src="./carousel.js" defer></script></body>');
+  .replace("</body>", '<script src="./metrika.js" defer></script><script src="./carousel.js" defer></script></body>');
 
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });

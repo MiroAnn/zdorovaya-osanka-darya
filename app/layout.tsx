@@ -14,5 +14,16 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="ru"><body>{children}</body></html>;
+  return (
+    <html lang="ru">
+      <body>
+        {children}
+        <noscript>
+          <div>
+            <img src="https://mc.yandex.ru/watch/112548668" style={{ position: "absolute", left: "-9999px" }} alt="" />
+          </div>
+        </noscript>
+      </body>
+    </html>
+  );
 }
