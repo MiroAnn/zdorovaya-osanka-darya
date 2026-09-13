@@ -21,7 +21,7 @@ html = html
   .replace(/<link rel="stylesheet" href="\/app\/globals\.css"[^>]*>/i, `<link rel="stylesheet" href="./style.css?v=${cssVersion}">`)
   .replace(/\sdata-rsc-css-href="[^"]*"/g, "")
   .replace(/\sdata-precedence="[^"]*"/g, "")
-  .replace(/(src|href)="\/(?!\/|#)/g, '$1="./')
+  .replace(/(src|srcset|href)="\/(?!\/|#)/gi, '$1="./')
   .replace("</body>", '<script src="./carousel.js" defer></script></body>');
 
 await rm(output, { recursive: true, force: true });
