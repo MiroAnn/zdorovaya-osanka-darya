@@ -29,7 +29,10 @@
 
 html,body{width:100%;max-width:100%;overflow-x:hidden}
 main{width:100%;max-width:100%;overflow-x:clip}
-.site-header{position:sticky;top:0;z-index:100}
+.site-header{position:fixed;top:0;right:0;left:0;z-index:100;width:100%}
+html{scroll-padding-top:92px}
+section[id]{scroll-margin-top:92px}
+@media(min-width:561px){main{padding-top:75px}}
 
 @media(max-width:560px){
   .site-header{position:fixed;top:0;right:0;left:0;grid-template-columns:minmax(0,1fr) auto;gap:12px;width:100%;max-width:100%;padding-top:calc(14px + env(safe-area-inset-top))}
