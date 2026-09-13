@@ -158,7 +158,7 @@ export default function Home() {
       </section>
 
       <section className="recognition" id="for-whom">
-        <img className="recognition-person" src="/puzzled-person.png" alt="Человек с недоумевающим выражением лица" width="1536" height="1024" loading="lazy" />
+        <img className="recognition-person" src="/puzzled-person-watercolor.webp" alt="Акварельная иллюстрация человека, который выбирает подходящее направление занятий" width="1536" height="1024" loading="lazy" />
         <div className="shape shape-two"/>
         <div className="section-heading"><h2>Для тех, кто не уверен</h2></div>
         <div className="recognition-grid">{recognitionItems.map((item, index) => <article key={item}><span>{String(index + 1).padStart(2, "0")}</span><p>{item}</p></article>)}</div>
