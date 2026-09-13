@@ -150,7 +150,7 @@ export default function Home() {
         <div className="section-heading"><h2>Вам подойдет, если</h2></div>
         <div className="fit-content">
           <figure className="fit-visual">
-            <img src="/back-pain-highlight.png" alt="Человек держится рукой за поясницу, зона боли подсвечена красным" width="1122" height="1402" loading="lazy" />
+            <img src="/back-pain-highlight-watercolor.webp" alt="Акварельная иллюстрация: человек держится рукой за поясницу, зона боли подсвечена красным" width="1122" height="1402" loading="lazy" />
           </figure>
           <div className="fit-grid">{fitItems.map((item, index) => <article key={item}><FitIcon index={index}/><p>{item}</p></article>)}</div>
         </div>
