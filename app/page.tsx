@@ -106,6 +106,7 @@ function FitIcon({ index }: { index: number }) {
 }
 
 const zoneIconTypes = ["feet", "pelvis", "shoulders", "neck", "spine"];
+const signupUrl = "https://daryakavunenko.tilda.ws/";
 
 function ZoneIcon({ index }: { index: number }) {
   return <span className={`zone-icon zone-icon--${zoneIconTypes[index]}`} aria-hidden="true"><i/><b/><em/></span>;
@@ -114,7 +115,7 @@ function ZoneIcon({ index }: { index: number }) {
 function Cta({ secondary = false }: { secondary?: boolean }) {
   return (
     <div className={secondary ? "cta-wrap cta-wrap--center" : "cta-wrap"}>
-      <a className="button" href="#tariffs">Пройти диагностику <Arrow /></a>
+      <a className="button" href={signupUrl}>Пройти диагностику <Arrow /></a>
       <span>{secondary ? "И узнать будет ли вам полезен курс" : "Чтобы узнать подойдет ли вам курс"}</span>
     </div>
   );
@@ -128,7 +129,7 @@ export default function Home() {
         <nav aria-label="Основная навигация">
           <a href="#for-whom">Для кого</a><a href="#course">Что будет на курсе</a><a href="#results">Результат</a><a href="#tariffs">Тарифы</a>
         </nav>
-        <a className="header-button" href="#tariffs">Пройти диагностику</a>
+        <a className="header-button" href={signupUrl}>Пройти диагностику</a>
       </header>
 
       <section className="hero" id="top">
@@ -228,8 +229,8 @@ export default function Home() {
       <section className="tariffs" id="tariffs">
         <div className="section-heading"><h2>Тарифы</h2></div>
         <div className="tariff-grid">
-          <article className="tariff-card"><p className="tariff-number">01</p><h3>Групповой</h3><p>Для тех, кому нужна последовательная программа, понятный ритм и регулярная обратная связь.</p><h4>В тариф входит:</h4><CheckList items={curatorFeatures}/><div className="price"><div className="price-row"><strong>16 900 ₽</strong><del>19 900 ₽</del></div><p className="price-note">— для первых 5 участников</p></div><a className="button" href="#final">Выбрать групповой тариф <Arrow /></a></article>
-          <article className="tariff-card tariff-card--accent"><p className="tariff-number">02</p><h3>Индивидуальный</h3><p>Для тех, кому важны персональные комментарии врача и корректировка работы по ходу курса.</p><h4>Всё, что входит в тариф «Групповой», а также:</h4><CheckList items={daryaFeatures}/><div className="price"><div className="price-row"><strong>30 000 ₽</strong><del>34 900 ₽</del></div><p className="price-note">— для первых 5 участников</p></div><a className="button" href="#final">Выбрать индивидуальный тариф <Arrow /></a></article>
+          <article className="tariff-card"><p className="tariff-number">01</p><h3>Групповой</h3><p>Для тех, кому нужна последовательная программа, понятный ритм и регулярная обратная связь.</p><h4>В тариф входит:</h4><CheckList items={curatorFeatures}/><div className="price"><div className="price-row"><strong>16 900 ₽</strong><del>19 900 ₽</del></div><p className="price-note">— для первых 5 участников</p></div><a className="button" href={signupUrl}>Выбрать групповой тариф <Arrow /></a></article>
+          <article className="tariff-card tariff-card--accent"><p className="tariff-number">02</p><h3>Индивидуальный</h3><p>Для тех, кому важны персональные комментарии врача и корректировка работы по ходу курса.</p><h4>Всё, что входит в тариф «Групповой», а также:</h4><CheckList items={daryaFeatures}/><div className="price"><div className="price-row"><strong>30 000 ₽</strong><del>34 900 ₽</del></div><p className="price-note">— для первых 5 участников</p></div><a className="button" href={signupUrl}>Выбрать индивидуальный тариф <Arrow /></a></article>
         </div>
       </section>
 
