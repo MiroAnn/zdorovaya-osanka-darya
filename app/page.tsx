@@ -218,7 +218,7 @@ export default function Home() {
         </div>
         <div className="cases-carousel" data-case-carousel aria-label="Фотографии результатов до и после курса">
           <button className="case-stream-arrow case-stream-arrow--previous" data-carousel-previous type="button" aria-label="Показать предыдущие результаты">←</button>
-          <div className="cases-track" data-carousel-track tabIndex={0}>
+          <div className="cases-track" data-carousel-track role="region" aria-label="Лента результатов учеников">
             {resultCases.map(({ id, image }) => (
               <article className="case-slide" key={image}>
                 <figure className="case-photo">

@@ -228,3 +228,35 @@ section[id]{scroll-margin-top:92px}
 @media(max-width:960px){.case-slide{min-width:calc((100% - 18px)/2)}}
 @media(max-width:760px){.cases-heading{display:block;margin-top:70px}.cases-heading>p{margin-top:20px}.cases-carousel{margin-right:-20px;margin-left:-20px;padding:0 42px}.cases-track{gap:12px}.case-slide{min-width:82%}.case-stream-arrow{top:calc(50% - 25px);width:50px;height:50px}.case-stream-arrow--previous{left:8px}.case-stream-arrow--next{right:8px}}
 @media(max-width:420px){.case-slide{min-width:88%}.case-photo figcaption span{padding:36px 15px 14px}.cases-heading>p{font-size:14px}}
+
+.tarifs-page{min-height:100vh;background:#202525;color:#f7f7f2;overflow:hidden}
+.tarifs-shell{width:min(1320px,100%);margin:0 auto;padding:74px 28px 96px}
+.tarifs-intro{max-width:1040px;margin-bottom:54px}
+.tarifs-kicker{display:block;margin-bottom:18px;color:#ff7564;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.tarifs-intro h1{max-width:1000px;margin:0 0 30px;font-size:clamp(46px,5.1vw,74px);line-height:.96;letter-spacing:-.055em}
+.tarifs-intro p{margin:0;font-size:21px}
+.tarifs-intro a{font-weight:700;text-decoration:underline;text-decoration-color:#ff7564;text-decoration-thickness:2px;text-underline-offset:5px}
+.tarifs-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+.tarifs-card{min-width:0;min-height:760px;padding:38px 36px 36px;border:1px solid rgba(247,247,242,.27);display:flex;flex-direction:column;align-items:flex-start}
+.tarifs-card-dark{background:#202525;color:#f7f7f2}
+.tarifs-card-light{background:#f7f7f2;color:#202525}
+.tarifs-card-blue{background:#647b8b;color:#fff}
+.tarifs-number{color:#90a8b6;font-size:11px;font-weight:700}
+.tarifs-card-light .tarifs-number{color:#647b8b}.tarifs-card-blue .tarifs-number{color:#d6e3db}
+.tarifs-card h2{margin:25px 0 13px;font-size:31px;line-height:1;letter-spacing:-.04em}
+.tarifs-description{min-height:88px;margin:0;font-size:16px;line-height:1.5}
+.tarifs-card h3{min-height:54px;margin:30px 0 6px;font-size:17px;line-height:1.25}
+.tarifs-features{width:100%;list-style:none;margin:0 0 38px;padding:0}
+.tarifs-features li{position:relative;padding:15px 4px 15px 27px;border-bottom:1px solid rgba(247,247,242,.17);font-size:15px;line-height:1.42}
+.tarifs-card-light .tarifs-features li{border-color:rgba(32,37,37,.13)}
+.tarifs-features li:before{content:"";position:absolute;left:3px;top:22px;width:8px;height:8px;border-radius:50%;background:#ff7564}
+.tarifs-price{width:100%;margin-top:auto;margin-bottom:25px}
+.tarifs-price>div{display:flex;align-items:baseline;gap:15px;flex-wrap:wrap}
+.tarifs-price strong{font-size:34px;line-height:1;letter-spacing:-.035em}
+.tarifs-price del{color:#ff7564;font-size:19px;font-weight:700;text-decoration-thickness:2px}
+.tarifs-price>span{display:block;margin-top:12px;font-size:14px;font-weight:700}
+.tarifs-button{width:100%;min-height:55px;padding:0 22px;border-radius:999px;background:#f17562;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:18px;font-size:13px;font-weight:700;transition:transform .2s,background .2s}
+.tarifs-button:hover{background:#e86350;transform:translateY(-2px)}
+.tarifs-button span{font-size:23px;font-weight:400}
+@media(max-width:1040px){.tarifs-grid{grid-template-columns:1fr}.tarifs-card{min-height:0}.tarifs-description,.tarifs-card h3{min-height:0}.tarifs-intro h1{font-size:clamp(44px,8vw,68px)}}
+@media(max-width:600px){.tarifs-shell{padding:48px 18px 64px}.tarifs-intro{margin-bottom:34px}.tarifs-intro h1{font-size:36px;line-height:1.02}.tarifs-intro p{font-size:17px}.tarifs-card{padding:28px 24px}.tarifs-card h2{font-size:29px}.tarifs-price strong{font-size:31px}}
