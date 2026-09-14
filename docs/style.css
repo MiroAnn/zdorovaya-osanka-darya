@@ -240,11 +240,12 @@ section[id]{scroll-margin-top:92px}
 @media(min-width:901px){
   .body-diagram{border:0;background:transparent}
   .body-diagram:after{content:"";position:absolute;z-index:0;inset:15% 0;border:1px solid var(--line);background:linear-gradient(145deg,#f3f5f1,var(--chalk));pointer-events:none}
-  .body-diagram:before{z-index:1;inset:15% 33%;border-color:rgba(79,113,130,.34);pointer-events:none}
+  .body-diagram:before{display:none}
   .body-diagram-person{z-index:1}
   .diagram-callouts li{background:transparent}
   .diagram-callouts li>span:last-child{position:relative;z-index:3;padding:5px 7px;background:rgba(247,247,242,.97)}
   .consequence-icon{position:relative;z-index:3}
+  .callout-6{top:72%}
 }
 .body-diagram-person{top:1%;width:500px;height:98%}
 .diagram-callouts li{display:flex;align-items:center;gap:14px;padding:14px 16px;border-top:1px solid var(--blue)}
