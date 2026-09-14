@@ -256,7 +256,6 @@ export default function Home() {
 
       <section className="final-cta" id="final">
         <div className="final-wings" aria-hidden="true"/>
-        <p className="eyebrow">Здоровая осанка</p>
         <h2>Получите диагностику, системный подход к телу, понятную и простую программу специально для вас и поддержку в течение 6 недель.</h2>
         <Cta secondary />
       </section>
