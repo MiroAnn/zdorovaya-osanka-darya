@@ -16,7 +16,7 @@ await cp(path.join(root, "public"), output, { recursive: true });
 await writeFile(path.join(output, "style.css"), css);
 await writeFile(path.join(output, ".nojekyll"), "");
 
-for (const route of ["/", "/tarifs", "/user", "/policy"]) {
+for (const route of ["/", "/tarifs", "/user", "/policy", "/oferta"]) {
   const response = await fetch(`${origin}${route}`);
   if (!response.ok) throw new Error(`Could not render ${route}: ${response.status}`);
   const nested = route !== "/";

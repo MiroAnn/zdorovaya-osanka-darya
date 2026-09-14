@@ -311,6 +311,14 @@ section[id]{scroll-margin-top:92px}
   letter-spacing: -0.045em;
 }
 
+.legal-lead {
+  max-width: 720px;
+  margin: -30px 0 56px !important;
+  color: #5f7e8e;
+  font-size: clamp(18px, 2.2vw, 23px) !important;
+  line-height: 1.45 !important;
+}
+
 .legal-document section + section {
   margin-top: 52px;
   padding-top: 44px;
@@ -373,6 +381,7 @@ section[id]{scroll-margin-top:92px}
   .legal-document { border-radius: 16px; padding: 24px 18px 40px; }
   .legal-back { margin-bottom: 32px; }
   .legal-document h1 { margin-bottom: 40px; font-size: 38px; }
+  .legal-lead { margin: -18px 0 40px !important; }
   .legal-document section + section { margin-top: 36px; padding-top: 32px; }
   .legal-document h2 { font-size: 24px; }
   .legal-document p { font-size: 16px; line-height: 1.58; }

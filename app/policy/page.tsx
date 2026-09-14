@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const siteUrl = "https://course.dariakavunenko.ru";
-const offerUrl = "https://dariakavunenko.ru/oferta-consultacii";
+const offerUrl = "https://course.dariakavunenko.ru/oferta";
 
 const policyText = `1. Общие положения
 Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. № 152-ФЗ «О персональных данных» (далее — Закон о персональных данных) и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые ИП Кавуненко Дарья Владимировна (далее — Оператор).
@@ -151,7 +151,7 @@ const labels = new Set([
 
 function linkedText(text: string): ReactNode {
   return text
-    .split(/(https:\/\/course\.dariakavunenko\.ru|https:\/\/dariakavunenko\.ru\/oferta-consultacii)/g)
+    .split(/(https:\/\/course\.dariakavunenko\.ru(?:\/oferta)?)/g)
     .map((part, index) => part === siteUrl || part === offerUrl
       ? <a href={part} key={`${part}-${index}`}>{part}</a>
       : <span key={`${index}-${part.slice(0, 8)}`}>{part}</span>);
