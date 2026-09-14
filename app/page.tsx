@@ -142,7 +142,7 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <h1>Курс “Здоровая осанка” – 6 недель, после которых у вас вырастут крылья</h1>
+          <h1>Курс “Здоровая спина” – 6 недель, после которых у вас вырастут крылья</h1>
           <Cta />
         </div>
         <div className="portrait">
@@ -152,7 +152,7 @@ export default function Home() {
           </picture>
           <img className="hero-darya-photo" src="/darya-cover-cutout-flipped.png" alt="Дарья Кавуненко" width="1024" height="1536" fetchPriority="high" />
         </div>
-        <p className="portrait-caption">Автор курса – врач-реабилитолог Дарья Кавуненко, которая помогла почти тысяче пациентов избавиться от болей в спине, шее, голове, ногах и суставах и почувствовать себя свободными <span className="caption-final-phrase">и полными жизни.</span></p>
+        <p className="portrait-caption">Автор курса — Дарья Кавуненко, врач-реабилитолог, работающая в доказательном подходе. Помогла более чем тысяче пациентов избавиться от болей в спине, шее, голове, ногах и суставах и почувствовать себя свободными <span className="caption-final-phrase">и полными жизни.</span></p>
       </section>
 
       <section className="fit-section">
