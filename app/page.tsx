@@ -133,7 +133,7 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top"><strong>Здоровая осанка</strong><span>Дарья Кавуненко</span></a>
+        <a className="brand" href="#top"><strong>Здоровая спина</strong><span>Дарья Кавуненко</span></a>
         <nav aria-label="Основная навигация">
           <a href="#for-whom">Для кого</a><a href="#course">Что будет на курсе</a><a href="#results">Результат</a><a href="#tariffs">Тарифы</a>
         </nav>
