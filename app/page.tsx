@@ -25,12 +25,12 @@ const recognitionItems = [
 ];
 
 const consequences = [
-  "напряжением и болью в шее, плечах или между лопатками;",
-  "дискомфортом в грудном или поясничном отделе;",
-  "скованностью после сна или долгого сидения;",
-  "выраженным прогибом в пояснице, сутулостью или асимметрией;",
-  "дискомфортом в тазобедренных или коленных суставах;",
-  "усталостью, болью или изменением нагрузки на стопы;",
+  "напряжением и болью в шее, плечах или между лопатками",
+  "дискомфортом в грудном или поясничном отделе",
+  "скованностью после сна или долгого сидения",
+  "выраженным прогибом в пояснице, сутулостью или асимметрией",
+  "дискомфортом в тазобедренных или коленных суставах",
+  "усталостью, болью или изменением нагрузки на стопы",
   "ощущением, что спину тяжело долго держать ровно.",
 ];
 
@@ -112,6 +112,19 @@ function FitIcon({ index }: { index: number }) {
   return <span className={`fit-icon fit-icon--${fitIconTypes[index]}`} aria-hidden="true"><i/><b/></span>;
 }
 
+function ConsequenceIcon({ index }: { index: number }) {
+  const drawings = [
+    <><circle cx="24" cy="10" r="5"/><path d="M19 17v7m10-7v7M8 39c2-9 8-14 16-14s14 5 16 14M16 29l-5-5m21 5 5-5"/></>,
+    <><path d="M20 6c-3 7-3 13 0 18s3 11 0 18M28 6c3 7 3 13 0 18s-3 11 0 18"/><path d="M16 13h16M16 24h16M16 35h16"/></>,
+    <><circle cx="24" cy="24" r="16"/><path d="M24 14v11l7 4M10 10l-4-4m32 4 4-4"/></>,
+    <><circle cx="24" cy="9" r="4"/><path d="M24 14v26M15 20l9 4 10-3M17 40h14"/><path d="M10 8v32" strokeDasharray="3 4"/></>,
+    <><path d="M15 7v14l10 7v13M33 7v12l-8 9-10 13"/><circle cx="25" cy="28" r="3"/></>,
+    <><path d="M19 7c8 3 13 11 12 21-.8 8-6 13-13 12-6-1-9-6-7-11 2-4 7-4 8-9 .8-4-2-8 0-13Z"/><circle cx="34" cy="13" r="2"/><circle cx="37" cy="19" r="1.5"/></>,
+    <><circle cx="18" cy="10" r="4"/><path d="M18 15v15l-6 11m6-11 8 11M18 20l10 5M33 13v28M29 13h8"/></>,
+  ];
+  return <span className="consequence-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">{drawings[index]}</svg></span>;
+}
+
 const zoneIconTypes = ["feet", "pelvis", "shoulders", "neck", "spine"];
 const signupUrl = "https://daryakavunenko.tilda.ws/";
 const diagnosisUrl = "https://t.me/daryakavunenkobot?start=test";
@@ -174,7 +187,6 @@ export default function Home() {
       </section>
 
       <section className="consequences">
-        <div className="orbit-graphic" aria-hidden="true"><i/><i/><i/></div>
         <div className="section-heading wide"><h2>Плохая осанка может привести к множеству проблем</h2></div>
         <div className="two-columns">
           <div className="body-copy">
@@ -184,7 +196,7 @@ export default function Home() {
         </div>
         <div className="body-diagram">
           <img className="body-diagram-person" src="/posture-problem-map.png" alt="Схема проблемных зон тела, связанных с осанкой" width="1122" height="1402" loading="lazy" />
-          <ul className="diagram-callouts">{consequences.map((item, index) => <li className={`callout-${index + 1}`} key={item}><span>{item}</span></li>)}</ul>
+          <ul className="diagram-callouts">{consequences.map((item, index) => <li className={`callout-${index + 1}`} key={item}><ConsequenceIcon index={index}/><span>{item}</span></li>)}</ul>
         </div>
         <div className="note"><p>Не каждая боль вызвана осанкой. Но если проблема связана с тем, как тело двигается и распределяет нагрузку, работать только с местом боли часто недостаточно.</p></div>
       </section>
