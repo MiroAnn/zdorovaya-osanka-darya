@@ -6,7 +6,7 @@ const root = process.cwd();
 const output = path.join(root, "docs");
 const origin = process.env.PAGES_RENDER_ORIGIN || "http://localhost:3000";
 
-const css = `${await readFile(path.join(root, "app/globals.css"), "utf8")}\n${await readFile(path.join(root, "app/tarifs/tarifs.css"), "utf8")}`
+const css = `${await readFile(path.join(root, "app/globals.css"), "utf8")}\n${await readFile(path.join(root, "app/tarifs/tarifs.css"), "utf8")}\n${await readFile(path.join(root, "app/user/user.css"), "utf8")}`
   .replace(/^@import\s+["']tailwindcss["'];?\s*/m, "");
 const cssVersion = createHash("sha256").update(css).digest("hex").slice(0, 10);
 
@@ -16,7 +16,7 @@ await cp(path.join(root, "public"), output, { recursive: true });
 await writeFile(path.join(output, "style.css"), css);
 await writeFile(path.join(output, ".nojekyll"), "");
 
-for (const route of ["/", "/tarifs"]) {
+for (const route of ["/", "/tarifs", "/user"]) {
   const response = await fetch(`${origin}${route}`);
   if (!response.ok) throw new Error(`Could not render ${route}: ${response.status}`);
   const nested = route !== "/";
