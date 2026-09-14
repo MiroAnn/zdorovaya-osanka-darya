@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import "./tarifs.css";
 
 export const metadata: Metadata = {
-  title: "Тарифы курса «Здоровая осанка»",
+  title: "Тарифы курса «Здоровая спина»",
   description: "Выберите подходящий формат участия в курсе Дарьи Кавуненко.",
   openGraph: {
-    title: "Тарифы курса «Здоровая осанка»",
+    title: "Тарифы курса «Здоровая спина»",
     description: "Групповой, индивидуальный и VIP-форматы участия.",
     images: [],
   },
   twitter: {
     card: "summary",
-    title: "Тарифы курса «Здоровая осанка»",
+    title: "Тарифы курса «Здоровая спина»",
     description: "Групповой, индивидуальный и VIP-форматы участия.",
     images: [],
   },
@@ -55,7 +55,7 @@ export default function TarifsPage() {
       <section className="tarifs-shell">
         <div className="tarifs-intro">
           <span className="tarifs-kicker">Курс Дарьи Кавуненко</span>
-          <h1>Вы можете идти на курс «Здоровая осанка». Выберите подходящий тариф:</h1>
+          <h1>Вы можете идти на курс «Здоровая спина». Выберите подходящий тариф:</h1>
           <p>А <a href={memoUrl} target="_blank" rel="noopener noreferrer">вот обещанная памятка</a> по регулярности упражнений</p>
         </div>
 
