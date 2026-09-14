@@ -237,7 +237,12 @@ section[id]{scroll-margin-top:92px}
 
 /* Clean symptom map: larger figure and semantic icons instead of connectors. */
 .body-diagram:before{inset:3% 27%}
-@media(min-width:901px){.body-diagram:before{z-index:4;border-color:rgba(79,113,130,.34);pointer-events:none}}
+@media(min-width:901px){
+  .body-diagram:before{z-index:1;border-color:rgba(79,113,130,.34);pointer-events:none}
+  .diagram-callouts li{background:transparent}
+  .diagram-callouts li>span:last-child{position:relative;z-index:3;padding:5px 7px;background:rgba(247,247,242,.97)}
+  .consequence-icon{position:relative;z-index:3}
+}
 .body-diagram-person{top:1%;width:500px;height:98%}
 .diagram-callouts li{display:flex;align-items:center;gap:14px;padding:14px 16px;border-top:1px solid var(--blue)}
 .diagram-callouts li:before,.diagram-callouts li:after{display:none!important;content:none!important;background:none!important;border:0!important}
