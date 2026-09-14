@@ -229,6 +229,12 @@ section[id]{scroll-margin-top:92px}
 @media(max-width:760px){.cases-heading{display:block;margin-top:70px}.cases-heading>p{margin-top:20px}.cases-carousel{margin-right:-20px;margin-left:-20px;padding:0 42px}.cases-track{gap:12px}.case-slide{min-width:82%}.case-stream-arrow{top:calc(50% - 25px);width:50px;height:50px}.case-stream-arrow--previous{left:8px}.case-stream-arrow--next{right:8px}}
 @media(max-width:420px){.case-slide{min-width:88%}.case-photo figcaption span{padding:36px 15px 14px}.cases-heading>p{font-size:14px}}
 
+.site-footer{align-items:flex-start;gap:32px;flex-wrap:wrap}
+.site-footer .legal-links{display:flex;flex:1;justify-content:center;gap:10px 28px;flex-wrap:wrap;text-align:center}
+.site-footer .legal-links a{color:rgba(247,247,242,.72);text-decoration:underline;text-decoration-color:rgba(247,247,242,.3);text-underline-offset:4px}
+.site-footer .legal-links a:hover{color:var(--chalk);text-decoration-color:var(--coral)}
+@media(max-width:700px){.site-footer{flex-direction:column}.site-footer .legal-links{flex-direction:column;align-items:flex-start;text-align:left}.site-footer>span:last-child{color:rgba(247,247,242,.62)}}
+
 .tarifs-page{min-height:100vh;background:#202525;color:#f7f7f2;overflow:hidden}
 .tarifs-shell{width:min(1320px,100%);margin:0 auto;padding:74px 28px 96px}
 .tarifs-intro{max-width:1040px;margin-bottom:54px}
@@ -260,6 +266,11 @@ section[id]{scroll-margin-top:92px}
 .tarifs-button span{font-size:23px;font-weight:400}
 @media(max-width:1040px){.tarifs-grid{grid-template-columns:1fr}.tarifs-card{min-height:0}.tarifs-description,.tarifs-card h3{min-height:0}.tarifs-intro h1{font-size:clamp(44px,8vw,68px)}}
 @media(max-width:600px){.tarifs-shell{padding:48px 18px 64px}.tarifs-intro{margin-bottom:34px}.tarifs-intro h1{font-size:36px;line-height:1.02}.tarifs-intro p{font-size:17px}.tarifs-card{padding:28px 24px}.tarifs-card h2{font-size:29px}.tarifs-price strong{font-size:31px}}
+.tarifs-footer{width:min(1320px,100%);margin:0 auto;padding:32px 28px 44px;border-top:1px solid rgba(247,247,242,.2);align-items:flex-start;gap:32px;flex-wrap:wrap;background:#202525}
+.tarifs-footer nav{display:flex;flex:1;justify-content:center;gap:10px 28px;flex-wrap:wrap;text-align:center}
+.tarifs-footer nav a{color:rgba(247,247,242,.72);text-decoration:underline;text-decoration-color:rgba(247,247,242,.3);text-underline-offset:4px}
+.tarifs-footer nav a:hover{color:#fff;text-decoration-color:#ff7564}
+@media(max-width:700px){.tarifs-footer{flex-direction:column;padding:28px 18px 36px}.tarifs-footer nav{flex-direction:column;align-items:flex-start;text-align:left}.tarifs-footer>span:last-child{color:rgba(247,247,242,.62)}}
 
 .legal-page {
   min-height: 100vh;

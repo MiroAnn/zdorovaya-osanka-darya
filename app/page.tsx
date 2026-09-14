@@ -260,7 +260,14 @@ export default function Home() {
         <h2>Получите диагностику, системный подход к телу, понятную и простую программу специально для вас и поддержку в течение 6 недель.</h2>
         <Cta secondary />
       </section>
-      <footer><span>Здоровая осанка</span><span>Дарья Кавуненко</span></footer>
+      <footer className="site-footer">
+        <span>Здоровая спина</span>
+        <nav className="legal-links" aria-label="Юридическая информация">
+          <a href="/user">Пользовательское соглашение</a>
+          <a href="/policy">Политика обработки персональных данных</a>
+        </nav>
+        <span>Дарья Кавуненко</span>
+      </footer>
       <script src="/metrika.js" defer></script>
       <script src="/carousel.js" defer></script>
     </main>

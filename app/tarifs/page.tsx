@@ -91,6 +91,14 @@ export default function TarifsPage() {
           </article>
         </div>
       </section>
+      <footer className="tarifs-footer">
+        <span>Здоровая спина</span>
+        <nav aria-label="Юридическая информация">
+          <a href="/user">Пользовательское соглашение</a>
+          <a href="/policy">Политика обработки персональных данных</a>
+        </nav>
+        <span>Дарья Кавуненко</span>
+      </footer>
     </main>
   );
 }
