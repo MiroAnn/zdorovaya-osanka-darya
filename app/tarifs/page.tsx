@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 const memoUrl = "https://www.dropbox.com/scl/fo/xf7wvh261mcom27njhfid/ABLZ-Uui-dW3t19TsIxnNIA?rlkey=y3a0ppbdymj3xbxp8u7qc5q6s&dl=0";
-const signupUrl = "https://daryakavunenko.tilda.ws/";
+const signupUrl = "https://t.me/daryakavunenkobot?start=test";
 
 const groupFeatures = [
   "Стартовая оценка осанки по анкете",
