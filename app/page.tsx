@@ -114,6 +114,7 @@ function FitIcon({ index }: { index: number }) {
 
 const zoneIconTypes = ["feet", "pelvis", "shoulders", "neck", "spine"];
 const signupUrl = "https://daryakavunenko.tilda.ws/";
+const diagnosisUrl = "https://t.me/daryakavunenkobot?start=test";
 
 function ZoneIcon({ index }: { index: number }) {
   return <span className={`zone-icon zone-icon--${zoneIconTypes[index]}`} aria-hidden="true"><i/><b/><em/></span>;
@@ -122,7 +123,7 @@ function ZoneIcon({ index }: { index: number }) {
 function Cta({ secondary = false }: { secondary?: boolean }) {
   return (
     <div className={secondary ? "cta-wrap cta-wrap--center" : "cta-wrap"}>
-      <a className="button" href={signupUrl}>Пройти диагностику <Arrow /></a>
+      <a className="button" href={diagnosisUrl}>Пройти диагностику <Arrow /></a>
       <span>{secondary ? "И узнать будет ли вам полезен курс" : "Чтобы узнать подойдет ли вам курс"}</span>
     </div>
   );
@@ -136,7 +137,7 @@ export default function Home() {
         <nav aria-label="Основная навигация">
           <a href="#for-whom">Для кого</a><a href="#course">Что будет на курсе</a><a href="#results">Результат</a><a href="#tariffs">Тарифы</a>
         </nav>
-        <a className="header-button" href={signupUrl}>Пройти диагностику</a>
+        <a className="header-button" href={diagnosisUrl}>Пройти диагностику</a>
       </header>
 
       <section className="hero" id="top">
